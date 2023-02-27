@@ -1,0 +1,4194 @@
+{
+	"info": {
+		"_postman_id": "f8908d78-49b4-4649-a110-cba60d3fb176",
+		"name": "BPDSMART_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/register",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "konven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/konven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"konven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/users",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users/ tambah",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_nama",
+							"value": "mel",
+							"type": "default"
+						},
+						{
+							"key": "user_jabatan",
+							"value": "admin mrk",
+							"type": "default"
+						},
+						{
+							"key": "user_email",
+							"value": "mel@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "user_telp",
+							"value": "027456555",
+							"type": "default"
+						},
+						{
+							"key": "level_id",
+							"value": "5",
+							"type": "default"
+						},
+						{
+							"key": "user_admin",
+							"value": "3",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/users/create",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/search/swaguna",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"swaguna"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Helpdesk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/helpdesk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"helpdesk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasilayanan/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasilayanan",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailidentitas/128",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailidentitas",
+						"128"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Syariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/syariah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"syariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Internal",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/internal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"internal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Informasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/informasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"informasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JaringanPelayanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jaringanpelayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jaringanpelayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LokasiATM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasiatm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasiatm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LokasiLayananATM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasilayananatm/168",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasilayananatm",
+						"168"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StdLayanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/stdlayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stdlayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StandarLayanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/standarlayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"standarlayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BdyKerja",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/bdykerja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"bdykerja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IdentitasPribadi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/identitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"identitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dana Konven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/danakonven",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"danakonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dana Syariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/danasyariah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"danasyariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kredit",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/detailkredit",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"detailkredit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pembiyaan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pembiayaan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pembiayaan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jasa Konven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jasakonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jasakonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jasa Syariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/jasasyariah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"jasasyariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modal Kerja",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/modalkerja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"modalkerja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Investasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/investasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"investasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KirimanUangKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kirimanuang",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kirimanuang"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KirimanUangSyariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kirimanuangsyariah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kirimanuangsyariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TabKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tabkonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tabkonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TabSyariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/tabsyariah",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"tabsyariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/level/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"level",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level Link",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/level/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"level",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "level_nama",
+							"value": "edit level",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/level/update/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"level",
+						"update",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level Link",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "level_nama",
+							"value": "edit level",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/level/update/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"level",
+						"update",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KreditProduktif",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kreditproduktif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kreditproduktif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KreditKonsumer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kreditkonsumer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kreditkonsumer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KreditStandar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kreditstandar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kreditstandar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "KreditProgram",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kreditprogram",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kreditprogram"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiroKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/girokonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"girokonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiroSyariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/girosyariah/57",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"girosyariah",
+						"57"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DepositoKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/depositokonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"depositokonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TabKonven/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \r\n    \"konten_menu\": \"menu6\", \r\n    \"kategori_id\": \"2\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/tabkonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tabkonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GiroKonven/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n   \r\n    \"konten_menu\": \"giro\", \r\n    \"kategori_id\": \"2\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/girokonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"girokonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Level/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"level_nama\": \"divisi1\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/level",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"level"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "staf_nama",
+							"value": "lii",
+							"type": "default"
+						},
+						{
+							"key": "staf_jabatan",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "staf_email",
+							"value": "adm@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "staf_telp",
+							"value": "8282828",
+							"type": "default"
+						},
+						{
+							"key": "level_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "staf_admin",
+							"value": "1",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/users/update/4",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"update",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kategori",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kategori",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kategori"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailTabKonvenById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailtabkonven/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailtabkonven",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailGiroKonvenById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailgirokonven/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailgirokonven",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKreditProduktifById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkreditproduktif/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkreditproduktif",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailStdLayananById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailstdlayanan/97",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailstdlayanan",
+						"97"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailInternalById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailinternal/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailinternal",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LokasiLayanan/ Get Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasilayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasilayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailLokasiLayanan/ Get Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasilayanan/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasilayanan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailLokasiATMById/ Get Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasiatmbyid/167",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasiatmbyid",
+						"167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailLokasiLayananById/ Get Detail Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasilayananbyid/167",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasilayananbyid",
+						"167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailBdyKerjaById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailbdykerja/109",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailbdykerja",
+						"109"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailStandarLayananById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailstandarlayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailstandarlayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailIdentitasById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailidentitas/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailidentitas",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailDepoKonvenById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaildepokonven/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaildepokonven",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailTabKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/detailtabkonven",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"detailtabkonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKreditKonsumer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkreditkonsumer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkreditkonsumer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKreditProduktif",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkreditproduktif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkreditproduktif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailGiroKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailgirokonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailgirokonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailStdLayanan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailstdlayanan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailstdlayanan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailDepoKonven",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaildepokonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaildepokonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailDepoSyariah",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaildeposyariah",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaildeposyariah"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailTabKonven/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "tester6",
+							"type": "default"
+						},
+						{
+							"key": "konten_judul",
+							"value": "tabungan",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "kovensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/sutera.png"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "abc",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "def",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ghi",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "jkl",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "mno",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "asd",
+							"type": "default"
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "ase",
+							"type": "default"
+						},
+						{
+							"key": "konten_sk",
+							"value": "fgh",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailtabkonven",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailtabkonven"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailTabKonven/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Shafa Tabungan",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/shafa.jpg"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Simpanan dari pihak ketiga dalam rupiah pada Bank, yang penarikannya dilakukan sesuai dengan syarat yang ditentukan oleh Bank. Shafa adalah Tabungan Haji dan Umroh. Shafa",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "Pembukaan rekening tabungan Shafa adalah perorangan untuk merencanakan ibadah Haji dan Umroh. Shafa",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "- Tabungan untuk merencanakan ibadah Haji dan Umroh\n- Setoran awal minimal Rp 500.000,00\n- Setoran selanjutnya Rp 100.000,00\n- Saldo disisakan Rp 500.000,00\n- Saldo dapat jasa Rp 500.000,00\n- Biaya penutupan rekening Rp 5.000,00\n- Tidak mendapatkan fasilitas kartu ATM\nShafa",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Mendapatkan jasa manfaat dan perangkat ibadah Haji untuk menunjang perjalanan ibadah Haji\n- Bebas biaya administrasi bulanan\n- Suku bunga 1,00% per tahun dari saldo harian",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailgirokonven/update/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailgirokonven",
+						"update",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKreditKonsumer/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Kredit Multi Guna coba",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Fasilitas kredit yang diberikan kepada individu yang memiliki pendapatan/penghasilan yang dapat digunakan untuk berbagai keperluan konsumtif (consumtif purpose)",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "- Berusia 21 tahun atau sudah menikah dan pada saat kredit lunas usia tidak lebih dari 70 (tujuh puluh) tahun\n- Fotokopi KTP Pemohon dan pemilik jaminan (Suami / Istri)\n- Slip gaji untuk yang berpenghasilan tetap\n- Fotokopi Sertifikat Tanah + IMB ( Bila ada ) + NJOP + PBB\n- Fotokopi Surat Nikah\n- Fotokopi Kartu Keluarga (C1)\n- Denah Lokasi Jaminan Tempat Usaha\n- Fotokopi NPWP\n- Fotokopi Ijin2 usaha seperti : Keterangan Usaha dari Kelurahan, SIUP, HO\n- Fotokopi bukti-bukti transaksi jual beli/ORDER",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan isi",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "ketentuan isi",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK No. 077/KR 1006 tanggal 27 Februari 2017 Perihal Ketentuan Kredit Multiguna BPD\n- SE No. 014/KR 1006 tanggal 27 Februari 2017 Perihal Petunjuk Pelaksanaan Ketentuan Kredit Multiguna BPD",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkreditkonsumer/update/28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkreditkonsumer",
+						"update",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKreditProduktif/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Kredit Umum Komersial",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Kredit untuk perorangan, kelompok, badan usaha yang dipergunakan untuk kegiatan produktif (modal kerja atau investasi).\n",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "- Fotokopi KTP Pemohon dan pemilik jaminan (Suami / Istri)\n- Fotokopi Sertifikat Tanah + IMB ( Bila ada ) + NJOP + PBB\n- Fotokopi Surat Nikah\n- Fotokopi Kartu Keluarga (C1)\n- Denah Lokasi Jaminan Tempat Usaha\n- Fotokopi NPWP\n- Fotokopi Ijin2 Usaha seperti: Keterangan Usaha dari Kelurahan,SIUP, HO.\n- Fotokopi bukti-bukti transaksi jual beli/ORDER",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK No. 0050/KR 1006 tanggal 31 Januari 2017 Perihal Denda Pelunasan Kredit Dipercepat\n- SE No. 0007/KR 1006 tanggal 31 Januari 2017 Perihal Petunjuk Pelaksanaan Denda Pelunasan Kredit Dipercepat\n- SE No. 0018/KR 1006 tanggal 11 Mei 2016 Perihal Suku Bunga Kredit Komersial\n- SE No. 0031/KR 1006 tanggal 19 Juni 2015 Perihal Biaya Provisi dan Administrasi\n- SE No. 0031/KR 1006 tanggal 1 Juli 2014 Perihal Suku Bunga Counter Kredit",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkreditproduktif/update/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkreditproduktif",
+						"update",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailGiroKonven/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Giro Swasta/Pemerintah",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/shafa.jpg"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Simpanan dana pihak ketiga dalam Rupiah yang penarikannya dapat dilakukan setiap saat dengan menggunakan cek, bilyet giro, sarana perintah pembayaran lainnya sesuai ketentuan yang ditetapkan PT Bank BPD DIY.",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "Pembukaan rekening Giro dapat dilakukan oleh perorangan, lembaga pemerintah atau swasta yang memenuhi persyaratan sebagai berikut:\n- Cakap melakukan perbuatan hukum\n- Tidak tercatat dalam Daftar Hitam Nasional Bank Indonesia\n- Menyerahkan fotokopi identitas diri (KTP/Passport, NPWP)\n- Untuk badan usaha menyerahkan NPWP, TDP, SIUP, dan Akte pendirian perusahaan\n- Mengisi formulir aplikasi pembukaan Giro & melakukan setoran awal.\n- Bersedia memberikan keterangan sumber dana\n- Bersedia tunduk pada ketentuan sebagai Giran\n",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "Jenis skim Giro dibedakan menjadi:\n\nGiro Pemerintah\n- Giro Kasda: Perhitungan saldo harian\n- Giro selain Kasda, seperti Giro Pemerintah Pusat, & Giro Lembaga Pemerintah, dll: Perhitungan saldo terendah\n\nGiro Swasta, terdiri dari:\n- Perorangan: Saldo awal minimal Rp 1.000.000,00\nSaldo disisakan Rp 1.000.000,00\nSaldo dapat jasa minimal Rp 50.000,00\nBiaya pengelolaan rekening Rp 10.000,00 per bulan\nBiaya penutupan rekening Rp 15.000,00\nPerhitungan saldo harian\n\n- Perusahaan: Saldo awal minimal Rp 2.000.000,00\nSaldo disisakan Rp 2.000.000,00\nSaldo dapat jasa minimal Rp 50.000,00\nBiaya pengelolaan rekening Rp 10.000,00 per bulan\nBiaya penutupan rekening Rp 15.000,00\nPerhitungan saldo harian",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Penyetoran dan penarikan dapat dilakukan di semua kantor layanan Bank BPD DIY.\n- Sebagai sarana transaksi non tunai\n- Memberikan kelancaran dan kemudahan dalam bertransaksi (fasilitas Cek dan Bilyet Giro)\n- Fasilitas rekening koran berisi mutasi/transaksi yang dikirim ke pemegang rekening setiap bulan sehingga dapat dengan mudah memantau posisi saldo giro\n\nSuku Bunga Giro Kas Umum Daerah, Penerimaan Dan Pengeluaran, sebagai berikut:\n- Saldo Harian & Saldo Minimal = 2,50% p.a.\n\nSuku Bunga Giro Swasta Progresif Harian, sebagai berikut:\n- Saldo Rp 5 juta = 0,00% p.a.\n- Saldo Rp 5 juta s.d. Rp 50 juta = 0,25% p.a.\n- Saldo Rp 50 juta s.d. Rp 100 juta = 0,50% p.a.\n- Saldo Rp 100 juta s.d. Rp 500 juta = 1,00% p.a.\n- Saldo Rp 500 juta = 1,50% p.a.\n\nSuku Bunga Giro Antar Bank, sebagai berikut:\n- Saldo Rp 5 juta = 0,00% p.a.\n- Saldo Rp 5 juta = 1,50% p.a.\n\n",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY.\n- SK Direksi nomor 0082/ DJ 1006 tanggal 31 Maret 2021 tentang Suku Bunga/Jasa Kas Umum Daerah Penerimaan Dan Pengeluaran, Swasta Dan Antar Bank.\n",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailgirokonven/update/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailgirokonven",
+						"update",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Home/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "PT. Bank BPD DIY",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "konten_gambar3",
+							"type": "file",
+							"src": "/F:/bpdsmart/react_login/public/dist/news/news3.jpeg"
+						},
+						{
+							"key": "konten_deskripsi3",
+							"value": "Masa depan yang Aman dan Nyaman menjadi salah satu impian setiap orang. Sedulur bisa mewujudkannya bersama Bank BPD DIY dengan Kredit Purna Karya. Keredit Purna Karya Adalah fasilitas kredit yang diberikan kepada Pensiunan atau para Purna Karya yang pembayaran pensiunnya melalui Bank BPD DIY. Angsuran s/d 5096 dari pensiun per bulan. Jangka waktu pinjaman s/d 60 bulan, sesuai umur peminjam. Jaminan berupa SK pensiun asli. Angsuran bulanan mudah karena melalui potong pensiun. Bunga menarik. Persyaratan mudah dan proses cepat. Diikutkan dalam asuransi jiwa. info lebih lengkap silahkan datang ke kantor cabang terdekat atau bisa menghubungi CS kami di 1500061",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "Pembukaan rekening tabungan Shafa adalah perorangan untuk merencanakan ibadah Haji dan Umroh. Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "- Tabungan untuk merencanakan ibadah Haji dan Umroh\n- Setoran awal minimal Rp 500.000,00\n- Setoran selanjutnya Rp 100.000,00\n- Saldo disisakan Rp 500.000,00\n- Saldo dapat jasa Rp 500.000,00\n- Biaya penutupan rekening Rp 5.000,00\n- Tidak mendapatkan fasilitas kartu ATM\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Mendapatkan jasa manfaat dan perangkat ibadah Haji untuk menunjang perjalanan ibadah Haji\n- Bebas biaya administrasi bulanan\n- Suku bunga 1,00% per tahun dari saldo harian",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/update3/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"update3",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailIdentitas/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Standar Penampilan Pegawai Pria",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Identitas Pribadi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_gambar3",
+							"type": "file",
+							"src": "/F:/bpdsmart/react_login/public/dist/news/news3.jpeg"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Standar Penampilan Pegawai Pria\\r\\n\\r\\n- Penampilan wajah: bersih, sehat dan terawat. Apabila memelihara kumis dicukur rapi (tidak melebihi bibir atas) dan tipis. Tidak berjambang dan berjenggot.\\r\\n- Penampilan tubuh : proposional, rapi, bersih dan wangi.\\r\\n- Tata rambut : potongan rambut menyesuaikan suasana kantor (formal), tidak menyentuh bagian atas telinga dan kerah baju, tidak dibotak, disisir rapi, bersih dan sehat, tidak berketombe, warna rambut hitam/alami.\\r\\n- Seragam : sesuai ketentuan bank dan berdasi.\\r\\n- Asesories : maksimum 5 titik; cincin (maksimal 2 buah), manset/pin, jam tangan, jepit dasi, kacamata.\\r\\n- Sepatu : pantofel tertutup, bahan dari kulit atau sintetis, warna gelap, bersih dan bersemir.",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailidentitas/update3/102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailidentitas",
+						"update3",
+						"102"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailInvestasi/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Investasi Musyarakah",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Identitas Pribadi",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_gambar3",
+							"type": "file",
+							"src": "/F:/bpdsmart/react_login/public/dist/news/news4.jpeg"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Investasi Musyarakah adalah produk penyaluran dana dalam bentuk pembiayaan berdasarkan prinsip Musyarakah dalam rangka memenuhi kebutuhan investasi nasabah.\n\nBesarnya pembiayaan yang dapat diberikan oleh Bank disesuaikan dengan kebutuhan nasabah berdasarkan analisis Bank maksimum 80% dari kebutuhan investasi nasabah.",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "• Pemohon mengajukan permohonan pembiayaan dengan mengisi formulir yang telah ditentukan Bank BPD DIY Syariah dilampiri :\n\n\t\t\n• Laporan Keuangan 2 (dua) periode terakhir.\t\t\n• Rencana biaya proyek dan skema pembiayaan.\t\t\n• Proyeksi Keuangan.\t\t\n• Fotokopi Akte Pendirian/Perubahan Perusahaan dan fotokopi identitas pengurus.\t\t\n• Fotokopi perijinan yang diperlukan.\t\t\n• NPWP perusahaan bagi pengajuan diatas Rp. 100 juta atau sesuai ketentuan yang         berlaku.\t\t\n• Fotokopi bukti kepemilikan barang agunan tambahan.\t\t\n• Susunan Organisasi dan Manajemen.\t\t\n• Rencana mengatasi aspek lingkungan (AMDAL) untuk industri tertentu (bila ada).\t\n\t\t\n• Dalam hal perusahaan tergabung dalam grup, agar disampaikan pada laporan grup 2 (dua) periode terakhir dari perusahaan grup tersebut.\t\n• Untuk pembiayaan besar dengan plafond Rp. 10.000.000.000,00 (sepuluh miliar) ke atas, laporan keuangan yang disampaikan wajib diaudit oleh Akuntan Publik.",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "• Nisbah bagi hasil sesuai kesepakatan Bank dengan nasabah.\t\n• Dapat difasilitasi dengan asuransi jiwa maupun asuransi kerugian.\t\n• Tujuan Pembiayaan untuk memenuhi kebutuhan Investasi nasabah, \t\n• Jangka waktu pembiayaan  s.d 120 bulan",
+							"type": "default"
+						},
+						{
+							"key": "konten_sk",
+							"value": "sk se",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.215:8080/detailinvestasi/update3/71",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"215"
+					],
+					"port": "8080",
+					"path": [
+						"detailinvestasi",
+						"update3",
+						"71"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LokasiLayanan/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Shafa Tabungan",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "lokasi_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/shafa.jpg"
+						},
+						{
+							"key": "lokasi_nama",
+							"value": "Kantor Cabang Utama",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_alamat",
+							"value": "Gedung Bank BPD DIY LT 1-2 Jl. Tentara Pelajar No. 7 Yogyakarta",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_telp",
+							"value": "(0274) 561614  (Hunting)",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_fax",
+							"value": "fax",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lat",
+							"value": "-7.78514100",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lon",
+							"value": "110.36035400",
+							"type": "default"
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasilayanan/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasilayanan",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LokasiLayanan/tambah detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Shafa Tabungan",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "lokasi_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/shafa.jpg"
+						},
+						{
+							"key": "lokasi_nama",
+							"value": "Kantor Cabang Utama",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_alamat",
+							"value": "Gedung Bank BPD DIY LT 1-2 Jl. Tentara Pelajar No. 7 Yogyakarta",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_telp",
+							"value": "(0274) 561614  (Hunting)",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_fax",
+							"value": "fax",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lat",
+							"value": "-7.78514100",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lon",
+							"value": "110.36035400",
+							"type": "default"
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/lokasilayanan/create/78",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lokasilayanan",
+						"create",
+						"78"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailInternal/tambah detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_judul",
+							"value": "berita baru",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": "/C:/Users/Asus/Pictures/shafa.jpg"
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "detail berita baru",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailinternal/create/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailinternal",
+						"create",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailInternal/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_judul",
+							"value": "news",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "yee aja kan",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailinternal/update/126",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailinternal",
+						"update",
+						"126"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailLokasiLayanan/tambah detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Shafa Tabungan",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "lokasi_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "lokasi_nama",
+							"value": "abcde",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_alamat",
+							"value": "Gedung Bank BPD DIY LT 1-2 Jl. Tentara Pelajar No. 7 Yogyakarta",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_telp",
+							"value": "(0274) 561614  (Hunting)",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_fax",
+							"value": "fax",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lat",
+							"value": "-7.78514100",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lon",
+							"value": "110.36035400",
+							"type": "default"
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasilayanan/create/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasilayanan",
+						"create",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailLokasiLayanan/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Shafa Tabungan",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "lokasi_gambar",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						},
+						{
+							"key": "lokasi_nama",
+							"value": "K Kas UPN Veteran Yogyakarta\n",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_alamat",
+							"value": "Kompleks Kampus UPN Veteran Yogyakarta Jl SWK No. 14 (Lingkar Utara), Condongcatur, Depok, Sleman",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_telp",
+							"value": "(0274) 488530",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_fax",
+							"value": "fax",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lat",
+							"value": "-7.76186900",
+							"type": "default"
+						},
+						{
+							"key": "lokasi_lon",
+							"value": "110.40752700",
+							"type": "default"
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaillokasilayanan/update/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaillokasilayanan",
+						"update",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailStandarLayanan/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Standar layanan Satpam bpd",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Internal",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Standar Layanan Satpam\n\nSikap yang harus dilakukan :\n- Sikap wibawa dan tanggap serta peduli.\n- Badan tegap saat berdiri/duduk.\n- Senantiasa tersenyum, ramah dan santun.\n- Waspada dalam menjaga ketertiban dan keamanan lingkungan.\n\nHal yang tidak boleh dilakukan :\n- Membiarkan pos/desk dalam keadaan kosong.\n- Melakukan tindakan yang kurang simpatik atau terkesan mengacuhkan nasabah misalnya : merokok,bermain catur,bermain kartu, membaca koran, menonton TV, mengisi TTS, dan lain-lain yang bertentangan dengan etika.\n\nSikap satpam di banking hall :\n- Berdiri dengan posisi siap menyambut nasabah yang akan masuk Banking Hall.\n- Membukakan pintu bagi nasabah yang hendak masuk Banking Hall.\n- Menyambut nasabah dengan mengucapkan salam sambil tersenyum dan menawarkan bantuan.\n- Proaktif untuk membantu nasabah jika ada nasabah yang kebingungan.\n- Tersenyum dan membantu membukakan pintu ketika nasabah hendak keluar Banking Hall.\n- Mengucapkan terima kasih dan salam.\n\nSikap satpam di luar bankinghall :\n- Menjaga &nbsp;keamanan lingkungan kantor dan sekitarnya.\n- Membantu kelancaran lalu lintas keluar masuk gedung.\n- Membantu membukakan/ menutupkan pintu mobil nasabah/ tamu VIP sambil tersenyum dan mengucapkan salam.\n- Membawakan payung (saat hujan) untuk nasabah yang akan memasuki Banking Hall.\n- Membantu nasabah yang difabel.\n- Membantu nasabah menyeberang jalan.\n- Tidak diperkenankan duduk/ berdiri di halaman parkir dan berbicara dengan orang lain yang tidak berkepentingan dengan pekerjaan.",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "Pembukaan rekening tabungan Shafa adalah perorangan untuk merencanakan ibadah Haji dan Umroh. Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "- Tabungan untuk merencanakan ibadah Haji dan Umroh\n- Setoran awal minimal Rp 500.000,00\n- Setoran selanjutnya Rp 100.000,00\n- Saldo disisakan Rp 500.000,00\n- Saldo dapat jasa Rp 500.000,00\n- Biaya penutupan rekening Rp 5.000,00\n- Tidak mendapatkan fasilitas kartu ATM\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Mendapatkan jasa manfaat dan perangkat ibadah Haji untuk menunjang perjalanan ibadah Haji\n- Bebas biaya administrasi bulanan\n- Suku bunga 1,00% per tahun dari saldo harian",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK Direksi nomor 0090/KA 1006 tanggal 06 April 2009 tentang Pedoman Operasional Aplikasi Perbankan Tersentral Bank BPD DIY\n- SK Direksi nomor 0084/DJ 1006 tanggal 18 November 2019 tentang Tarif Suku Bunga/Jasa Manfaat Tabungan\n- SK Direksi nomor 0010/DJ 1006 tanggal 13 Januari 2006 tentang Setoran Awal Tabungan Haji dan Umrah Shafa\n- SE Direksi nomor 0073-DJ 1006 tanggal 07 Juli 2020 tentang Perubahan Tarif Suku Bunga/Jasa Manfaat Tabungan\nShafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailstandarlayanan/update/106",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailstandarlayanan",
+						"update",
+						"106"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailDepoSyariah/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "Deposito Mudharabah\n",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Syariah\n",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Deposito Mudharabah adalah investasi tidak terikat pihak ketiga pada Bank BPD DIY Syariah yang penarikannya hanya dapat dilakukan pada waktu tertentu dengan pembagian hasil sesuai dengan nisbah yang telah disepakati antara nasabah dengan Bank",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "- Nilai nominal minimum deposito mudharabah sebesar Rp1.000.000,00 (satu juta rupiah), nilai nominal selanjutnya dalam kelipatan Rp 1,00 (satu rupiah).\n\nJangka waktu Deposito Mudharabah ditetapkan sebagai berikut :\n- Jangka waktu 1 (satu) bulan.\n- Jangka waktu 3 (tiga) bulan.\n- Jangka waktu 6 (enam) bulan.\n- Jangka waktu 12 (dua belas) bulan.\n\nPemilik rekening adalah Perorangan maupun Badan Hukum :\n- Perorangan atau badan usaha perorangan.\n- Badan Usaha : PT, Koperasi, Yayasan, Firma, CV, dll.\n\t\nMenyerahkan foto kopi dan memperlihatkan dokumen aseli :\n- Nasabah Perorangan : Tanda bukti diri (KTP, SIM, dll) bagi Warga Negara Indonesia (WNI) dan Paspor , KITAS atau KIMS bagi bukan WNI.\n- Nasabah Badan Hukum : NPWP, Akta Pendirian, Anggaran Dasar dan perubahan terakhir, Surat Kuasa penunjukan pengelola rekening, bukti identitas diri pemberi dan penerima kuasa.\n- Membuka rekening tabungan untuk penempatan bagi hasil deposito.\n- Nasabah wajib mentaati ketentuan setoran minimum, saldo minimum, bagi hasil dibebani pajak, segera lapor apabila kehilangan bilyet deposito, mengembalikan bilyet deposito apabila menutup rekening",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Menggunakan akad Mudharabah,sehingga mendapat bagi hasil yang kompetitif.\n- Dapat dijadikan agunan pembiayaan.\n- Dana dijamin oleh Lembaga Penjamin Simpanan (LPS).\n- Nasabah dapat memilih angka cantik sebagai nominal deposito, misalnya sesuai tanggal lahir, tanggal pernikahan atau lainnya",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "sk se",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detaildeposyariah/update/58",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detaildeposyariah",
+						"update",
+						"58"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKirimanUangKonven/edit detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "RTGS coba",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Sarana transfer dana elektronik yang setelmennya dilakukan seketika per transaksi secara individual.\nJasa layanan ini bisa dimanfaatkan oleh nasabah baik yang memiliki rekening di Bank maupun tidak memiliki rekening (Walk In Customer).",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "- Mengisi formulir kiriman uang dengan lengkap dan benar\n- Menyediakan dana yang cukup (tunai atau tabungan)\n- Waktu layanan setiap hari Senin s.d. Jumat (Pukul 08.00 &ndash; 15.00 WIB).\n- Nominal kiriman uang diatas Rp.100 juta\n- Biaya kiriman uang:\n\t- Nasabah Rp.30.000,- per transaksi\n\t- WIC/non nasabah Rp.35.000,- + PPN 10%",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Transaksi kiriman uang dapat dilayani dengan lebih cepat, aman, handal dan efisien\n- Biaya murah",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK No. 0095/DJ 1006 tanggal 05/06/2015 Perihal Layanan Kiriman Uang\n- SE No. 0028A/DJ 1006 tanggal 05/06/2015 Perihal Layanan Kiriman Uang\n- SE No. 0081/DJ 1006 tanggal 30/12/2015 Perihal Biaya kiriman uang, Batas Nominal dan Waktu Layanan Kiriman Uang\n- SK No. 0273/DJ 1006 tanggal 16/11/2015 Perihal Pedoman Operasional BI-RTGS Generasi II\n- SE No. 0070/DJ 1006 tanggal 16/11/2015 Perihal Sistem BI-RTGS Generasi II",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkirimanuang/update/43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkirimanuang",
+						"update",
+						"43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DetailKirimanUangKonven/edit detail Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "konten_parent",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "konten_menu",
+							"value": "Shafa",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_judul",
+							"value": "RTGS coba",
+							"type": "default"
+						},
+						{
+							"key": "konten_subjudul",
+							"value": "Produk Konvensional",
+							"type": "default"
+						},
+						{
+							"key": "konten_gambar",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "konten_deskripsi",
+							"value": "Sarana transfer dana elektronik yang setelmennya dilakukan seketika per transaksi secara individual.\nJasa layanan ini bisa dimanfaatkan oleh nasabah baik yang memiliki rekening di Bank maupun tidak memiliki rekening (Walk In Customer).",
+							"type": "default"
+						},
+						{
+							"key": "konten_syarat",
+							"value": "- Mengisi formulir kiriman uang dengan lengkap dan benar\n- Menyediakan dana yang cukup (tunai atau tabungan)\n- Waktu layanan setiap hari Senin s.d. Jumat (Pukul 08.00 &ndash; 15.00 WIB).\n- Nominal kiriman uang diatas Rp.100 juta\n- Biaya kiriman uang:\n\t- Nasabah Rp.30.000,- per transaksi\n\t- WIC/non nasabah Rp.35.000,- + PPN 10%",
+							"type": "default"
+						},
+						{
+							"key": "konten_ketentuan",
+							"value": "ketentuan",
+							"type": "default"
+						},
+						{
+							"key": "konten_fasilitas",
+							"value": "- Transaksi kiriman uang dapat dilayani dengan lebih cepat, aman, handal dan efisien\n- Biaya murah",
+							"type": "default"
+						},
+						{
+							"key": "konten_promosi_gambar",
+							"value": "abc",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_promosi_text",
+							"value": "def",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_simulasi",
+							"value": "fgh",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "konten_sk",
+							"value": "- SK No. 0095/DJ 1006 tanggal 05/06/2015 Perihal Layanan Kiriman Uang\n- SE No. 0028A/DJ 1006 tanggal 05/06/2015 Perihal Layanan Kiriman Uang\n- SE No. 0081/DJ 1006 tanggal 30/12/2015 Perihal Biaya kiriman uang, Batas Nominal dan Waktu Layanan Kiriman Uang\n- SK No. 0273/DJ 1006 tanggal 16/11/2015 Perihal Pedoman Operasional BI-RTGS Generasi II\n- SE No. 0070/DJ 1006 tanggal 16/11/2015 Perihal Sistem BI-RTGS Generasi II",
+							"type": "default"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/detailkirimanuang/update/43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"detailkirimanuang",
+						"update",
+						"43"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
